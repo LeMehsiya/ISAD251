@@ -5,7 +5,7 @@ if (!function_exists('pdo_connect_mysql')) {
 		$DATABASE_HOST = 'proj-mysql.uopnet.plymouth.ac.uk';
 		$DATABASE_USER = 'ISAD251_SYates';
 		$DATABASE_PASS = 'ISAD251_22214108';
-		$DATABASE_NAME = 'shoppingcart';
+		$DATABASE_NAME = 'isad251_syates';
 		try {
 			return new PDO('mysql:host=' . $DATABASE_HOST . ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS);
 		} catch (PDOException $exception) {
