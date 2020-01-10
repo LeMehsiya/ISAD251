@@ -11,7 +11,6 @@ if (isset($_POST['email'], $_POST['password']) && filter_var($_POST['email'],  F
         session_regenerate_id();
         $_SESSION['account_loggedin'] = TRUE;
         $_SESSION['account_id'] = $account['id'];
-        // Redirect the user back to the same page, they can then see their order history
         header('Location: index.php?page=myaccount');
     } else {
         $error = 'Incorrect Email/Password!';

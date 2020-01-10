@@ -13,8 +13,14 @@ function pdo_connect_mysql() {
 function template_header($title) {
 // Get the amount of items in the shopping cart
 $num_items_in_cart = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
+
+
+
 echo <<<EOT
 <!DOCTYPE html>
+
+
+
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -54,12 +60,10 @@ EOT;
 }
 // Template footer
 function template_footer() {
-$year = date('Y');
 echo <<<EOT
         </main>
         <footer>
             <div class="content-wrapper">
-                <p>&copy; $year, ChinaTown Tea</p>
             </div>
         </footer>
         <script src="script.js"></script>

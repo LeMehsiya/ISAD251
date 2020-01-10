@@ -1,5 +1,5 @@
 <?php
-
+// Get the 4 most recent added products
 $stmt = $pdo->prepare('SELECT * FROM products ORDER BY date_added DESC LIMIT 4');
 $stmt->execute();
 $recently_added_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -15,8 +15,7 @@ img {
 
 <div class="HomeBanner">
     <img src="imgs/chinatown3.jpg" alt="Chinatown" width="128" height="384">
-    <h2>ChinaTown Tea</h2>
-    <p>Rich Old Tea</p>
+
 </div>
 
 </div>
