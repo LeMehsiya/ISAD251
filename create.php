@@ -31,9 +31,12 @@ if (!empty($_POST)) {
         <input type="text" name="id" placeholder="26" value="auto" id="id">
         <input type="text" name="name" placeholder="John Doe" id="name">
         <label for="desc">desc</label>
+        <label for="price">desc</label>
         <label for="rrp">rrp</label>
         <input type="text" name="desc" placeholder="johndoe@example.com" id="desc">
-        <input type="text" name="rrp" placeholder="2025550143" id="rrp">
+        <input type="text" name="price" placeholder="2.48" id="price">
+
+        <input type="text" name="rrp" placeholder="20.76" id="rrp">
         <label for="quantity">quantity</label>
         <input type="text" name="quantity" placeholder="40" id="quantity">
         <label for="img">img</label>

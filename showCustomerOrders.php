@@ -12,9 +12,9 @@
 </html>
 <?php
 
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'root';
-$DATABASE_PASS = '';
+$DATABASE_HOST = 'proj-mysql.uopnet.plymouth.ac.uk';
+$DATABASE_USER = 'ISAD251_SYates';
+$DATABASE_PASS = 'ISAD251_22214108';
 $DATABASE_NAME = 'shoppingcart';
 $link = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 
